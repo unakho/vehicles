@@ -1,0 +1,61 @@
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Thu Jun 7 14:33:07 2018
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   user_data.ctl
+Data File:      user_data.dsv
+  Bad File:     user_data.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table TUSER, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+ID                                  FIRST     *   |       CHARACTER            
+ID_NUMBER                            NEXT     *   |       CHARACTER            
+FIRST_NAMES                          NEXT     *   |       CHARACTER            
+LAST_NAME                            NEXT     *   |       CHARACTER            
+MSISDN                               NEXT     *   |       CHARACTER            
+NETWORK                              NEXT     *   |       CHARACTER            
+POINTS                               NEXT     *   |       CHARACTER            
+CARD_NUMBER                          NEXT     *   |       CHARACTER            
+GENDER                               NEXT     *   |       CHARACTER            
+
+Record 1: Rejected - Error on table TUSER, column ID.
+ORA-01722: invalid number
+
+Record 8: Rejected - Error on table TUSER, column POINTS.
+ORA-01400: cannot insert NULL into ("SYSTEM"."TUSER"."POINTS")
+
+
+Table TUSER:
+  9 Rows successfully loaded.
+  2 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 148608 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            11
+Total logical records rejected:         2
+Total logical records discarded:        0
+
+Run began on Thu Jun 07 14:33:07 2018
+Run ended on Thu Jun 07 14:33:17 2018
+
+Elapsed time was:     00:00:10.00
+CPU time was:         00:00:00.33
