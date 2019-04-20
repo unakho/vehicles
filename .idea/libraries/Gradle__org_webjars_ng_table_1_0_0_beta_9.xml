@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.webjars:ng-table:1.0.0-beta.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/ng-table/1.0.0-beta.9/c586035c14937a9f99d4a3ae0a2c2e7cecb0ef93/ng-table-1.0.0-beta.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/ng-table/1.0.0-beta.9/4c035f7da68ca0340f0a88e33c824f97ce138f17/ng-table-1.0.0-beta.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

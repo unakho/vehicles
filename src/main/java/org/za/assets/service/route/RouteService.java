@@ -1,23 +1,24 @@
 package org.za.assets.service.route;
 
 import org.za.assets.dto.RouteDto;
-import org.za.assets.dto.base.IdDto;
-import org.za.assets.service.base.AssetsService;
+import org.za.assets.dto.base.BaseDto;
+import org.za.assets.service.AssetsService;
 
 import java.util.List;
+import java.util.UUID;
 
 /**
  * @author unakho.kama
  */
-public interface RouteService<T extends IdDto> extends AssetsService<T> {
+public interface RouteService<T extends BaseDto> extends AssetsService<BaseDto> {
 
     List<RouteDto> list();
 
-    RouteDto get(Long id);
+    RouteDto get(UUID id)throws Exception;
 
-    RouteDto create(RouteDto route);
+    RouteDto create(RouteDto license)throws Exception;
 
-    RouteDto update(RouteDto route);
+    RouteDto update(RouteDto license)throws Exception;
 
-    void remove(Long id);
+    void remove(UUID id)throws Exception;
 }

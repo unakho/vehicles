@@ -2,20 +2,21 @@ package org.za.assets.domain.base;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
+import java.util.UUID;
 
 /**
  * @author unakho.kama
  */
 @MappedSuperclass
-public class NameEntity extends IdEntity {
+public class NameEntity extends BaseEntity {
 
-    @Column(name = "first_names", length = 100)
+    //@Column(name = "name")
     private String name;
 
     public NameEntity() {
     }
 
-    public NameEntity(Long id, String name) {
+    public NameEntity(UUID id, String name) {
         super(id);
         this.name = name;
     }

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.webjars:angular-ui-bootstrap:2.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/angular-ui-bootstrap/2.2.0/ad54330e56c55eb0c8269f8b10797302859e95ff/angular-ui-bootstrap-2.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/angular-ui-bootstrap/2.2.0/a36650f3f725db75627820bd1bcd60ffff9c99f4/angular-ui-bootstrap-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

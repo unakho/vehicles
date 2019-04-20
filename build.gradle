@@ -1,36 +1,72 @@
 buildscript {
     ext {
-        springBootVersion = '1.5.7.RELEASE'
+        springBootVersion = "2.0.5.RELEASE"
     }
     repositories {
         mavenCentral()
+        maven {
+            url 'https://plugins.gradle.org/m2/'
+        }
         jcenter()
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-        classpath("org.flywaydb:flyway-core:5.0.7")
+        //classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("gradle.plugin.com.palantir.gradle.docker:gradle-docker:0.20.1")
+        //classpath("gradle.plugin.com.palantir.gradle.docker:gradle-docker:0.20.1")
+        classpath("org.flywaydb:flyway-core:5.0.7")       
     }
 }
 
 plugins {
     id "java"
-    id "org.flywaydb.flyway" version "5.0.7"
+    id "org.springframework.boot" version "2.0.5.RELEASE"
+    id "maven-publish"
+    id "com.palantir.docker" version "0.20.1"
+    id "org.flywaydb.flyway" version "5.0.7"       
 }
 
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'org.springframework.boot'
-apply plugin: 'io.spring.dependency-management'
+group "org.za.assets"
+version "1.0-SNAPSHOT"
 
-group = 'org.za.assets'
-version = '1.0-SNAPSHOT'
+apply plugin: "java"
+apply plugin: "eclipse"
+apply plugin: "idea"
+apply plugin: "org.springframework.boot"
+apply plugin: "io.spring.dependency-management"
+apply plugin: "com.palantir.docker"
+
+//docker configs up to line 55
+bootJar {
+    baseName = "assets-docker"
+    version = "0.1.1"
+}
+
+task unpack(type: Copy) {
+    dependsOn bootJar
+    from(zipTree(tasks.bootJar.outputs.files.singleFile))
+    into("build/dependency")
+}
+
+docker {
+    name "assets-docker"
+    tags "latest"
+    dockerfile file("Dockerfile")
+    copySpec.from(tasks.unpack.outputs).into("dependency")
+    buildArgs(['DEPENDENCY': "dependency"])
+    labels(['key': "value"])
+    pull true
+    noCache true
+}
+
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
-    mavenCentral()
-    mavenLocal()
+    //mavenLocal()
+    mavenCentral()    
     jcenter()
-    maven {
+  /*  maven {
 
         url "https://www.oracle.com/content/secure/maven/content"
         name "maven.oracle.com"
@@ -38,26 +74,55 @@ repositories {
             username mavenOracleUsername
             password mavenOraclePassword
         }
-    }
+    }*/
 }
 
-flyway {
-     url = 'jdbc:oracle:thin:@//127.0.0.1:1521:/orcl'
-     driver = 'org.jdbc.OracleDriver'
-     user = 'system'
-     password = 'xmaN1814'
-     table = 'schema_version'
+ flyway {
+     url='jdbc:postgresql://localhost:5432/car_list_db'
+     //driver = "org.jdbc.OracleDriver" 
+     user='postgres'
+     password='xmaN1814$@123'
+     //table = "schema_version"
      baselineOnMigrate=true
+}
+
+configurations{
+    all*.exclude module: "spring-boot-starter-logging"
 }
 
 dependencies {
     //spring boot starter dependencies
-    compile('org.springframework.boot:spring-boot-starter')
-    compile('org.springframework.boot:spring-boot-starter-web')
-    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile("org.springframework.boot:spring-boot-starter")
+    docker ("assets:vehicles:0.1.2")
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile("org.springframework.boot:spring-boot-starter-log4j2")
 
-    compile('com.oracle.jdbc:ojdbc8:12.2.0.1')
-    compile('org.flywaydb:flyway-core:5.0.7')
+    //compile("com.oracle.jdbc:ojdbc8:12.2.0.1")
+    compile("org.postgresql:postgresql")
+    compile("org.flywaydb:flyway-core:5.0.7")
+
+    //frond-end library
+    compile("org.webjars:angular-ui-bootstrap:2.2.0")
+    compile("org.webjars:bootstrap:3.3.7")
+    compile("org.webjars:jquery:2.1.4")
+    compile("org.webjars:ng-table:1.0.0-beta.9")
+    compile("org.webjars:angularjs:1.4.2")
+    compile("org.webjars:font-awesome:4.7.0")
+    compile("org.webjars:ng-idle:1.1.0")
+    compile("org.webjars:ngStorage:0.3.0")
+    compile("org.webjars:angular-ui-router:1.0.3")
+   /* compile("org.webjars:toastr:1.3.0")
+    compile("org.webjars.bower:moment:2.9.0")*/
+}
+
+publishing{
+    publications{
+        dockerPublication(MavenPublication){
+            from components.docker
+            artifactId project.name + "-docker"
+        }
+    }
 }
 
 

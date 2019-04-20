@@ -1,0 +1,30 @@
+<nav class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-header">
+        <a href="/" class="navbar-brand"><span class="brand-title">{{vm.title}}</span></a>
+        <a class="btn navbar-btn navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <div class="pull-right navbar-logo">
+            <ul class="nav navbar-nav pull-right">
+
+                <li><a ui-sref="shell"><i class="fa fa-home" aria-hidden="true"> Home</i></a></li>
+                <li><a ui-sref="topnav"><i class="fa fa-history"> About</i></a></li>
+                <li><a ui-sref="item"><i class="fa fa-paw"> Items</i></a></li>
+                <li><a ui-sref="dashboard"><i class="fa fa-dashboard"> Dashboard</i></a></li>
+                <li class="dropdown dropdown-big">
+                    <a ui-sref="http://www.angularjs.org" target="_blank">
+                        <img src="content/images/AngularJS-small.png" />
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="http://developer.marvel.com/" target="_blank">Chat rooms</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--<div ui-view></div>-->

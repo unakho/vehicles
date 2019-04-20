@@ -1,0 +1,28 @@
+<div>
+    <div id="splash-page" data-ng-show="vm.showSplash" class="dissolve-animation">
+        <div class="page-splash">
+            <div class="page-splash-message">
+                Online clothes store
+            </div>
+        </div>
+    </div>
+
+    <header class="clearfix">
+        <div data-ng-include="'app/views/topnav.html'"></div>
+    </header>
+    <section id="content" class="content">
+        <div data-ng-include="'app/views/sidebar.html'"></div>
+
+        <div data-ng-view class="shuffle-animation"></div>
+
+        <!--<div ngplus-overlay
+             ngplus-overlay-delay-in="50"
+             ngplus-overlay-delay-out="700"
+             ngplus-overlay-animation="dissolve-animation">
+            <img src="../../content/images/busy.gif"/>
+
+            <div class="page-spinner-message overlay-message">{{vm.busyMessage}}</div>
+        </div>-->
+    </section>
+    <!--<div ui-view=""></div>-->
+</div>

@@ -5,71 +5,59 @@ import org.springframework.stereotype.Service;
 import org.za.assets.domain.Route;
 import org.za.assets.dto.RouteDto;
 import org.za.assets.repository.RouteRepository;
+import org.za.assets.service.CRUDService;
 
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
 
 /**
  * @author unakho.kama
  */
 @Service
-public class RouteServiceImpl implements RouteService {
+public class RouteServiceImpl extends CRUDService implements RouteService<RouteDto> {
+
+
+    //private RouteRepository routeRepository;
+    private Route route;
 
     @Autowired
-    RouteRepository routeRepository;
-
     public RouteServiceImpl(RouteRepository routeRepository) {
-        this.routeRepository = routeRepository;
+        super(routeRepository);
+        this.route = new Route();
     }
 
     @Override
     public List<RouteDto> list() {
 
-        Stream<Route> stream = StreamSupport.stream(routeRepository.findAll().spliterator(), false);
-        return stream.map(route -> mapFrom(route)).collect(Collectors.toList());
+        return super.listRecords().map(entity -> {
+            Route route = (Route) entity;
+
+            return this.route.mapFrom(route);
+        }).collect(Collectors.toList());
     }
 
-    public RouteDto get(Long id) {
-        return mapFrom(routeRepository.findOne(id));
+    public RouteDto get(UUID id) throws Exception{
+        return this.route.mapFrom((Route) super.getRecord(id));
     }
 
-    public RouteDto create(RouteDto dto) {
+    public RouteDto create(RouteDto dto) throws Exception{
 
-        Route route = mapTo(dto);
-        route = routeRepository.save(route);
+        Route route = this.route.mapTo(dto);
+        route = (Route)super.createRecord(route);
 
-        return mapFrom(route);
+        return this.route.mapFrom(route);
     }
 
-    public RouteDto update(RouteDto dto) {
+    public RouteDto update(RouteDto dto) throws Exception{
 
-        Route route = mapTo(dto);
-        route = routeRepository.save(route);
+        Route route = this.route.mapTo(dto);
+        route = (Route)super.updateRecord(route);
 
-        return mapFrom(route);
+        return this.route.mapFrom(route);
     }
 
-    public void remove(Long id) {
-        routeRepository.delete(id);
-    }
-
-
-    private Route mapTo(RouteDto dto) {
-
-        Route route = new Route();
-        route.setId(dto.getId());
-        route.setStartAddress(dto.getStartAddress());
-        route.setEndAddress(dto.getEndAddress());
-        route.setMileage(dto.getMileage());
-
-        return route;
-    }
-
-    private RouteDto mapFrom(Route route) {
-
-        return new RouteDto(route.getId(), route.getStartAddress(),
-                route.getEndAddress(), route.getMileage());
+    public void remove(UUID id) throws Exception{
+        super.removeRecord(id);
     }
 }

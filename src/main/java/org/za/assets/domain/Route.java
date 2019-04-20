@@ -1,15 +1,17 @@
 package org.za.assets.domain;
 
-import org.za.assets.domain.base.IdEntity;
+import org.za.assets.domain.base.BaseEntity;
+import org.za.assets.dto.RouteDto;
 
 import javax.persistence.*;
+import java.util.UUID;
 
 /**
  * @author unakho.kama
  */
 @Entity
-@Table(name = "troute")
-public class Route extends IdEntity {
+@Table(schema = "assets_schema", name = "route")
+public class Route extends BaseEntity {
 
     @Column(name = "start_address")
     private String startAddress;
@@ -23,53 +25,40 @@ public class Route extends IdEntity {
     @JoinColumn(name = "user_id")
     private User user;
 
-    @ManyToOne
-    @JoinColumn(name = "schedule_id")
-    private Schedule schedule;
-
+    /*
+     * JPA wants an explicity definition of a default construct on the entity
+     */
     public Route() {
     }
 
-    public Route(String startAddress, String endAddress, Double mileage, User user,
-                 Schedule schedule) {
-
-        this.startAddress = startAddress;
-        this.endAddress = endAddress;
-        this.mileage = mileage;
-        this.user = user;
-        this.schedule = schedule;
-    }
-
-    public Route(Long id, String startAddress, String endAddress, Double mileage, User user, Schedule schedule) {
+    public Route(UUID id, String startAddress, String endAddress, Double mileage) {
         super(id);
-        this.startAddress = startAddress;
-        this.endAddress = endAddress;
-        this.mileage = mileage;
-        this.user = user;
-        this.schedule = schedule;
+        setStartAddress(startAddress);
+        setEndAddress(endAddress);
+        setMileage(mileage);
     }
 
-    public String getStartAddress() {
+    String getStartAddress() {
         return startAddress;
     }
 
-    public void setStartAddress(String startAddress) {
+    private void setStartAddress(String startAddress) {
         this.startAddress = startAddress;
     }
 
-    public String getEndAddress() {
+    String getEndAddress() {
         return endAddress;
     }
 
-    public void setEndAddress(String endAddress) {
+    private void setEndAddress(String endAddress) {
         this.endAddress = endAddress;
     }
 
-    public Double getMileage() {
+    Double getMileage() {
         return mileage;
     }
 
-    public void setMileage(Double mileage) {
+    private void setMileage(Double mileage) {
         this.mileage = mileage;
     }
 
@@ -77,15 +66,37 @@ public class Route extends IdEntity {
         return user;
     }
 
-    public void setUser(User vehicle) {
-        this.user = vehicle;
+    public void setUser(User user) {
+        this.user = user;
     }
 
-    public Schedule getSchedule() {
-        return schedule;
+    /*
+     * @param dto
+     * @return route entity
+     * This method is used by services that are related with Route entity
+     * @link RouteServiceImpl
+     */
+    public Route mapTo(RouteDto dto) {
+
+        if (dto == null)
+            throw new RuntimeException("Route dto is null!");
+
+        return new Route(dto.getId(), dto.getStartAddress(), dto.getEndAddress(), dto.getMileage());
     }
 
-    public void setSchedule(Schedule schedule) {
-        this.schedule = schedule;
+    /*
+     * @param route
+     * @return dto
+     * This method is used by services that are related with Route entity
+     * @link RouteServiceImpl
+     */
+    public RouteDto mapFrom(Route route) {
+
+        if (route == null)
+            throw new RuntimeException("Route entity is null!");
+
+        return new RouteDto(route.getId(), route.getStartAddress(),
+                route.getEndAddress(), route.getMileage());
     }
+
 }

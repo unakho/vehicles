@@ -2,6 +2,9 @@ package org.za.assets.dto;
 
 import org.za.assets.dto.base.NameDto;
 
+import java.util.List;
+import java.util.UUID;
+
 /**
  * @author unakho.kama
  */
@@ -15,12 +18,14 @@ public class UserDto extends NameDto {
     private String cardNumber;
     private char gender;
 
-    private VehicleDto vehicle;
     private LicenseDto license;
+    private List<VehicleDto> vehicles;
+    private List<RouteDto> routes;
+    private List<ProfileDto> profiles;
 
-    public UserDto(Long id, String name, String surname, String idNo, String contactNo,
-                   String network, int points, String cardNumber, char gender) {
-
+    public UserDto(UUID id, String name, String surname, String idNo,
+                   String contactNo, String network, int points, String cardNumber,
+                   char gender) {
         super(id, name);
         this.surname = surname;
         this.idNo = idNo;
@@ -31,8 +36,10 @@ public class UserDto extends NameDto {
         this.gender = gender;
     }
 
-    public UserDto(Long id, String name, String surname, String idNo, String contactNo,
-                   String network, int points, String cardNumber, char gender, VehicleDto vehicle, LicenseDto license) {
+    public UserDto(UUID id, String name, String surname, String idNo,
+                   String contactNo, String network, int points, String cardNumber,
+                   char gender, LicenseDto license, List<VehicleDto> vehicles,
+                   List<RouteDto> routes, List<ProfileDto> profiles) {
 
         super(id, name);
         this.surname = surname;
@@ -42,8 +49,10 @@ public class UserDto extends NameDto {
         this.points = points;
         this.cardNumber = cardNumber;
         this.gender = gender;
-        this.vehicle = vehicle;
         this.license = license;
+        this.vehicles = vehicles;
+        this.routes = routes;
+        this.profiles = profiles;
     }
 
     public String getSurname() {
@@ -102,19 +111,34 @@ public class UserDto extends NameDto {
         this.gender = gender;
     }
 
-    public VehicleDto getVehicle() {
-        return vehicle;
-    }
-
-    public void setVehicle(VehicleDto vehicle) {
-        this.vehicle = vehicle;
-    }
-
     public LicenseDto getLicense() {
         return license;
     }
 
     public void setLicense(LicenseDto license) {
         this.license = license;
+    }
+    public List<VehicleDto> getVehicles() {
+        return vehicles;
+    }
+
+    public void setVehicles(List<VehicleDto> vehicles) {
+        this.vehicles = vehicles;
+    }
+
+    public List<RouteDto> getRoutes() {
+        return routes;
+    }
+
+    public void setRoutes(List<RouteDto> routes) {
+        this.routes = routes;
+    }
+
+    public List<ProfileDto> getProfiles() {
+        return profiles;
+    }
+
+    public void setProfiles(List<ProfileDto> profiles) {
+        this.profiles = profiles;
     }
 }

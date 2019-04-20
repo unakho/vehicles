@@ -1,13 +1,16 @@
 package org.za.assets.dto.base;
 
+import java.util.UUID;
+
 /**
  * @author unakho.kama
  */
-public class NameDto extends IdDto {
+public class NameDto extends BaseDto {
+
 
     private String name;
 
-    public NameDto(Long id, String name) {
+    public NameDto(UUID id, String name) {
         super(id);
         this.name = name;
     }

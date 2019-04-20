@@ -1,37 +1,48 @@
 package org.za.assets.dto;
 
-import org.za.assets.dto.base.IdDto;
+import org.za.assets.domain.enums.Choice;
+import org.za.assets.dto.base.BaseDto;
 
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 /**
  * @author unakho.kama
  */
-public class LicenseDto extends IdDto {
+public class LicenseDto extends BaseDto {
 
-    private String code;
+    private LocalDateTime acquiredDate;
     private LocalDateTime expiryDate;
-    private UserDto user;
+    private byte choice;
+    private Integer ticketsCharged;
+    private LicenseTypeDto licenseType;
 
-    public LicenseDto(Long id, String code, LocalDateTime expiryDate) {
+    public LicenseDto(UUID id, LocalDateTime acquiredDate, LocalDateTime expiryDate,
+                      byte choice, Integer ticketsCharged) {
         super(id);
-        this.code = code;
+        this.acquiredDate = acquiredDate;
         this.expiryDate = expiryDate;
+        this.choice = choice;
+        this.ticketsCharged = ticketsCharged;
     }
 
-    public LicenseDto(Long id, String code, LocalDateTime expiryDate, UserDto user) {
+    public LicenseDto(UUID id, LocalDateTime acquiredDate, LocalDateTime expiryDate,
+                      byte choice, Integer ticketsCharged, LicenseTypeDto
+                              licenseType) {
         super(id);
-        this.code = code;
+        this.acquiredDate = acquiredDate;
         this.expiryDate = expiryDate;
-        this.user = user;
+        this.choice = choice;
+        this.ticketsCharged = ticketsCharged;
+        this.licenseType = licenseType;
     }
 
-    public String getCode() {
-        return code;
+    public LocalDateTime getAcquiredDate() {
+        return acquiredDate;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setAcquiredDate(LocalDateTime acquiredDate) {
+        this.acquiredDate = acquiredDate;
     }
 
     public LocalDateTime getExpiryDate() {
@@ -42,11 +53,27 @@ public class LicenseDto extends IdDto {
         this.expiryDate = expiryDate;
     }
 
-    public UserDto getUser() {
-        return user;
+    public byte getChoice() {
+        return choice;
     }
 
-    public void setUser(UserDto user) {
-        this.user = user;
+    public void setChoice(byte choice) {
+        this.choice = choice;
+    }
+
+    public Integer getTicketsCharged() {
+        return ticketsCharged;
+    }
+
+    public void setTicketsCharged(Integer ticketsCharged) {
+        this.ticketsCharged = ticketsCharged;
+    }
+
+    public LicenseTypeDto getLicenseType() {
+        return licenseType;
+    }
+
+    public void setLicenseType(LicenseTypeDto licenseType) {
+        this.licenseType = licenseType;
     }
 }

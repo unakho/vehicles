@@ -6,6 +6,8 @@ import org.za.assets.dto.UserDto;
 import org.za.assets.service.user.UserService;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 /**
  * @author unakho.kama
@@ -14,26 +16,25 @@ import java.util.List;
 @RequestMapping("/user")
 public class UserController {
     @Autowired
-    UserService userService;
+    UserService<UserDto> userService;
 
     @RequestMapping(value = "/list")
     public List<UserDto> list() {
         return userService.list();
     }
 
-    @RequestMapping(value = "/get")
-    public UserDto get(@PathVariable("id") Long id) {
-        return userService.get(id);
+    @RequestMapping(value = "/get/{id}")
+    public UserDto get(@PathVariable("id") UUID id)throws Exception {
+        return userService.get(id).get();
     }
 
-
     @RequestMapping(value = "/create", method = RequestMethod.PUT)
-    public UserDto create(@RequestBody UserDto user) {
-        return userService.create(user);
+    public UserDto create(@RequestBody UserDto user)throws Exception {
+        return userService.create(Optional.ofNullable(user)).get();
     }
 
     @RequestMapping(value = "/remove", method = RequestMethod.DELETE)
-    public void remove(@PathVariable("id") Long id) {
+    public void remove(@PathVariable("id") UUID id)throws Exception {
         userService.remove(id);
     }
 }
