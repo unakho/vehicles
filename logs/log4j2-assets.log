@@ -17365,3 +17365,1088 @@ java.lang.Exception: Record id 2cb9adef-76e2-4ef7-8297-f16f3af08a77 is not found
 2019-04-20 15:31:11.330  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
 2019-04-20 15:31:11.638  INFO LAPTOP-VRJTK5GU --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
 2019-04-20 15:31:11.798  INFO LAPTOP-VRJTK5GU --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-04-25 12:33:12.714  INFO LAPTOP-VRJTK5GU --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f4205be: startup date [Thu Apr 25 12:33:12 CAT 2019]; root of context hierarchy
+2019-04-25 12:33:48.993  INFO LAPTOP-VRJTK5GU --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cc75329] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-25 12:33:59.872  INFO LAPTOP-VRJTK5GU --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-25 12:33:59.996  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-25 12:34:00.610  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-25 12:34:00.613  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-25 12:34:01.251  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oracle\product\12.2.0\dbhome_1\bin;C:\Program Files (x86)\Intel\TXE Components\TCS\;C:\Program Files\Intel\TXE Components\TCS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\TXE Components\DAL\;C:\Program Files (x86)\Intel\TXE Components\DAL\;C:\Program Files\Intel\TXE Components\IPT\;C:\Program Files (x86)\Intel\TXE Components\IPT\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\gradle-4.2.1\bin;C:\apache-maven-3.3.9\bin;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Users\ukama\Anaconda3;C:\Users\ukama\Anaconda3\Library\mingw-w64\bin;C:\Users\ukama\Anaconda3\Library\usr\bin;C:\Users\ukama\Anaconda3\Library\bin;C:\Users\ukama\Anaconda3\Scripts;C:\Users\ukama\AppData\Local\Microsoft\WindowsApps;C:\Users\ukama\AppData\Roaming\npm;C:\Program Files\Docker Toolbox;.]
+2019-04-25 12:34:12.439  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-25 12:34:12.439  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 59751 ms
+2019-04-25 12:34:13.510  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-25 12:34:13.549  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-25 12:34:13.550  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-25 12:34:13.551  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-25 12:34:13.552  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-25 12:34:16.411  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.u.VersionPrinter                 : Flyway Community Edition 5.0.7 by Boxfuse
+2019-04-25 12:34:16.519  INFO LAPTOP-VRJTK5GU --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-04-25 12:34:19.525 ERROR LAPTOP-VRJTK5GU --- [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:51)
+	at org.flywaydb.core.internal.database.DatabaseFactory.createDatabase(DatabaseFactory.java:67)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1634)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1168)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at org.za.assets.Application.main(Application.java:40)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 37 more
+2019-04-25 12:34:19.688  WARN LAPTOP-VRJTK5GU --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain database connection
+------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+2019-04-25 12:34:19.722  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2019-04-25 12:34:20.259  INFO LAPTOP-VRJTK5GU --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-04-25 12:34:20.270 ERROR LAPTOP-VRJTK5GU --- [           main] o.s.b.SpringApplication                  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain database connection
+------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at org.za.assets.Application.main(Application.java:40)
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain database connection
+------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:57)
+	at org.flywaydb.core.internal.database.DatabaseFactory.createDatabase(DatabaseFactory.java:67)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1634)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1168)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	... 18 more
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:51)
+	... 24 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 37 more
+2019-04-25 12:48:05.582  INFO LAPTOP-VRJTK5GU --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b9df8a: startup date [Thu Apr 25 12:48:05 CAT 2019]; root of context hierarchy
+2019-04-25 12:48:24.040  INFO LAPTOP-VRJTK5GU --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$de87d693] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-25 12:48:30.756  INFO LAPTOP-VRJTK5GU --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-25 12:48:31.048  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-25 12:48:31.180  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-25 12:48:31.184  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-25 12:48:31.315  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oracle\product\12.2.0\dbhome_1\bin;C:\Program Files (x86)\Intel\TXE Components\TCS\;C:\Program Files\Intel\TXE Components\TCS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\TXE Components\DAL\;C:\Program Files (x86)\Intel\TXE Components\DAL\;C:\Program Files\Intel\TXE Components\IPT\;C:\Program Files (x86)\Intel\TXE Components\IPT\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\gradle-4.2.1\bin;C:\apache-maven-3.3.9\bin;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Users\ukama\Anaconda3;C:\Users\ukama\Anaconda3\Library\mingw-w64\bin;C:\Users\ukama\Anaconda3\Library\usr\bin;C:\Users\ukama\Anaconda3\Library\bin;C:\Users\ukama\Anaconda3\Scripts;C:\Users\ukama\AppData\Local\Microsoft\WindowsApps;C:\Users\ukama\AppData\Roaming\npm;C:\Program Files\Docker Toolbox;.]
+2019-04-25 12:48:44.069  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-25 12:48:44.070  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 38554 ms
+2019-04-25 12:48:45.608  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-25 12:48:46.176  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-25 12:48:46.181  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-25 12:48:46.183  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-25 12:48:46.185  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-25 12:48:49.928  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.u.VersionPrinter                 : Flyway Community Edition 5.0.7 by Boxfuse
+2019-04-25 12:48:49.993  INFO LAPTOP-VRJTK5GU --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-04-25 12:48:53.185 ERROR LAPTOP-VRJTK5GU --- [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:51)
+	at org.flywaydb.core.internal.database.DatabaseFactory.createDatabase(DatabaseFactory.java:67)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1634)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1168)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at org.za.assets.Application.main(Application.java:40)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 37 more
+2019-04-25 12:48:53.401  WARN LAPTOP-VRJTK5GU --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain database connection
+------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+2019-04-25 12:48:53.413  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2019-04-25 12:48:54.888  INFO LAPTOP-VRJTK5GU --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-04-25 12:48:54.904 ERROR LAPTOP-VRJTK5GU --- [           main] o.s.b.SpringApplication                  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain database connection
+------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at org.za.assets.Application.main(Application.java:40)
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain database connection
+------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:57)
+	at org.flywaydb.core.internal.database.DatabaseFactory.createDatabase(DatabaseFactory.java:67)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1634)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1168)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	... 18 more
+Caused by: org.postgresql.util.PSQLException: Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:51)
+	... 24 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 37 more
+2019-04-25 12:59:22.302  INFO LAPTOP-VRJTK5GU --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c530d1e: startup date [Thu Apr 25 12:59:22 CAT 2019]; root of context hierarchy
+2019-04-25 12:59:35.578  INFO LAPTOP-VRJTK5GU --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9b5770a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-25 13:00:01.107  INFO LAPTOP-VRJTK5GU --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-25 13:00:01.453  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-25 13:00:01.848  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-25 13:00:01.856  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-25 13:00:02.098  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oracle\product\12.2.0\dbhome_1\bin;C:\Program Files (x86)\Intel\TXE Components\TCS\;C:\Program Files\Intel\TXE Components\TCS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\TXE Components\DAL\;C:\Program Files (x86)\Intel\TXE Components\DAL\;C:\Program Files\Intel\TXE Components\IPT\;C:\Program Files (x86)\Intel\TXE Components\IPT\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\gradle-4.2.1\bin;C:\apache-maven-3.3.9\bin;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Users\ukama\Anaconda3;C:\Users\ukama\Anaconda3\Library\mingw-w64\bin;C:\Users\ukama\Anaconda3\Library\usr\bin;C:\Users\ukama\Anaconda3\Library\bin;C:\Users\ukama\Anaconda3\Scripts;C:\Users\ukama\AppData\Local\Microsoft\WindowsApps;C:\Users\ukama\AppData\Roaming\npm;C:\Program Files\Docker Toolbox;.]
+2019-04-25 13:00:15.924  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-25 13:00:15.925  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 53695 ms
+2019-04-25 13:00:16.723  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-25 13:00:16.778  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-25 13:00:16.779  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-25 13:00:16.780  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-25 13:00:16.781  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-25 13:00:19.551  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.u.VersionPrinter                 : Flyway Community Edition 5.0.7 by Boxfuse
+2019-04-25 13:00:19.585  INFO LAPTOP-VRJTK5GU --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-04-25 13:00:23.609 ERROR LAPTOP-VRJTK5GU --- [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:51)
+	at org.flywaydb.core.internal.database.DatabaseFactory.createDatabase(DatabaseFactory.java:67)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1634)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1168)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at org.za.assets.Application.main(Application.java:40)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 37 more
+2019-04-25 13:00:23.922  WARN LAPTOP-VRJTK5GU --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain database connection
+------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+2019-04-25 13:00:23.948  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2019-04-25 13:00:24.830  INFO LAPTOP-VRJTK5GU --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-04-25 13:00:24.838 ERROR LAPTOP-VRJTK5GU --- [           main] o.s.b.SpringApplication                  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain database connection
+------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at org.za.assets.Application.main(Application.java:40)
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain database connection
+------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:57)
+	at org.flywaydb.core.internal.database.DatabaseFactory.createDatabase(DatabaseFactory.java:67)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1634)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1168)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	... 18 more
+Caused by: org.postgresql.util.PSQLException: Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:51)
+	... 24 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 37 more
+2019-04-25 13:03:19.919  INFO LAPTOP-VRJTK5GU --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b9df8a: startup date [Thu Apr 25 13:03:19 CAT 2019]; root of context hierarchy
+2019-04-25 13:03:30.164  INFO LAPTOP-VRJTK5GU --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d21b84ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-25 13:03:37.166  INFO LAPTOP-VRJTK5GU --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-25 13:03:37.661  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-25 13:03:38.291  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-25 13:03:38.297  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-25 13:03:39.514  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oracle\product\12.2.0\dbhome_1\bin;C:\Program Files (x86)\Intel\TXE Components\TCS\;C:\Program Files\Intel\TXE Components\TCS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\TXE Components\DAL\;C:\Program Files (x86)\Intel\TXE Components\DAL\;C:\Program Files\Intel\TXE Components\IPT\;C:\Program Files (x86)\Intel\TXE Components\IPT\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\gradle-4.2.1\bin;C:\apache-maven-3.3.9\bin;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Users\ukama\Anaconda3;C:\Users\ukama\Anaconda3\Library\mingw-w64\bin;C:\Users\ukama\Anaconda3\Library\usr\bin;C:\Users\ukama\Anaconda3\Library\bin;C:\Users\ukama\Anaconda3\Scripts;C:\Users\ukama\AppData\Local\Microsoft\WindowsApps;C:\Users\ukama\AppData\Roaming\npm;C:\Program Files\Docker Toolbox;.]
+2019-04-25 13:03:48.074  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-25 13:03:48.077  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 28286 ms
+2019-04-25 13:03:49.403  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-25 13:03:49.447  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-25 13:03:49.449  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-25 13:03:49.450  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-25 13:03:49.451  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-25 13:03:52.841  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.u.VersionPrinter                 : Flyway Community Edition 5.0.7 by Boxfuse
+2019-04-25 13:03:52.902  INFO LAPTOP-VRJTK5GU --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-04-25 13:03:56.497 ERROR LAPTOP-VRJTK5GU --- [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:51)
+	at org.flywaydb.core.internal.database.DatabaseFactory.createDatabase(DatabaseFactory.java:67)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1634)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1168)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at org.za.assets.Application.main(Application.java:40)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 37 more
+2019-04-25 13:03:57.156  WARN LAPTOP-VRJTK5GU --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain database connection
+------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+2019-04-25 13:03:57.215  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2019-04-25 13:04:00.462  INFO LAPTOP-VRJTK5GU --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-04-25 13:04:00.469 ERROR LAPTOP-VRJTK5GU --- [           main] o.s.b.SpringApplication                  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain database connection
+------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at org.za.assets.Application.main(Application.java:40)
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain database connection
+------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:57)
+	at org.flywaydb.core.internal.database.DatabaseFactory.createDatabase(DatabaseFactory.java:67)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1634)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1168)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	... 18 more
+Caused by: org.postgresql.util.PSQLException: Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:51)
+	... 24 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 37 more
+2019-04-25 13:06:13.869  INFO LAPTOP-VRJTK5GU --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@37ddb69a: startup date [Thu Apr 25 13:06:13 CAT 2019]; root of context hierarchy
+2019-04-25 13:06:24.112  INFO LAPTOP-VRJTK5GU --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$634f6306] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-25 13:06:30.792  INFO LAPTOP-VRJTK5GU --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-25 13:06:30.998  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-25 13:06:31.096  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-25 13:06:31.099  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-25 13:06:31.261  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oracle\product\12.2.0\dbhome_1\bin;C:\Program Files (x86)\Intel\TXE Components\TCS\;C:\Program Files\Intel\TXE Components\TCS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\TXE Components\DAL\;C:\Program Files (x86)\Intel\TXE Components\DAL\;C:\Program Files\Intel\TXE Components\IPT\;C:\Program Files (x86)\Intel\TXE Components\IPT\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\gradle-4.2.1\bin;C:\apache-maven-3.3.9\bin;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Users\ukama\Anaconda3;C:\Users\ukama\Anaconda3\Library\mingw-w64\bin;C:\Users\ukama\Anaconda3\Library\usr\bin;C:\Users\ukama\Anaconda3\Library\bin;C:\Users\ukama\Anaconda3\Scripts;C:\Users\ukama\AppData\Local\Microsoft\WindowsApps;C:\Users\ukama\AppData\Roaming\npm;C:\Program Files\Docker Toolbox;.]
+2019-04-25 13:06:37.421  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-25 13:06:37.422  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 23600 ms
+2019-04-25 13:06:37.906  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-25 13:06:37.959  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-25 13:06:37.960  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-25 13:06:37.961  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-25 13:06:37.962  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-25 13:06:38.950  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.u.VersionPrinter                 : Flyway Community Edition 5.0.7 by Boxfuse
+2019-04-25 13:06:39.021  INFO LAPTOP-VRJTK5GU --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-04-25 13:06:41.397 ERROR LAPTOP-VRJTK5GU --- [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:51)
+	at org.flywaydb.core.internal.database.DatabaseFactory.createDatabase(DatabaseFactory.java:67)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1634)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1168)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at org.za.assets.Application.main(Application.java:40)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 37 more
+2019-04-25 13:06:41.471  WARN LAPTOP-VRJTK5GU --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain database connection
+------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+2019-04-25 13:06:41.495  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2019-04-25 13:06:41.589  INFO LAPTOP-VRJTK5GU --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-04-25 13:06:41.599 ERROR LAPTOP-VRJTK5GU --- [           main] o.s.b.SpringApplication                  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain database connection
+------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at org.za.assets.Application.main(Application.java:40)
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain database connection
+------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:57)
+	at org.flywaydb.core.internal.database.DatabaseFactory.createDatabase(DatabaseFactory.java:67)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1634)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1168)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	... 18 more
+Caused by: org.postgresql.util.PSQLException: Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:51)
+	... 24 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 37 more
+2019-04-25 13:22:40.807  INFO LAPTOP-VRJTK5GU --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13e547a9: startup date [Thu Apr 25 13:22:40 CAT 2019]; root of context hierarchy
+2019-04-25 13:23:11.232  INFO LAPTOP-VRJTK5GU --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c3ee9186] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-25 13:23:28.910  INFO LAPTOP-VRJTK5GU --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-25 13:23:29.362  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-25 13:23:29.892  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-25 13:23:29.902  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-25 13:23:30.111  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oracle\product\12.2.0\dbhome_1\bin;C:\Program Files (x86)\Intel\TXE Components\TCS\;C:\Program Files\Intel\TXE Components\TCS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\TXE Components\DAL\;C:\Program Files (x86)\Intel\TXE Components\DAL\;C:\Program Files\Intel\TXE Components\IPT\;C:\Program Files (x86)\Intel\TXE Components\IPT\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\gradle-4.2.1\bin;C:\apache-maven-3.3.9\bin;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Users\ukama\Anaconda3;C:\Users\ukama\Anaconda3\Library\mingw-w64\bin;C:\Users\ukama\Anaconda3\Library\usr\bin;C:\Users\ukama\Anaconda3\Library\bin;C:\Users\ukama\Anaconda3\Scripts;C:\Users\ukama\AppData\Local\Microsoft\WindowsApps;C:\Users\ukama\AppData\Roaming\npm;C:\Program Files\Docker Toolbox;.]
+2019-04-25 13:23:50.332  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-25 13:23:50.335  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 69569 ms
+2019-04-25 13:23:52.937  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-25 13:23:53.602  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-25 13:23:53.604  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-25 13:23:53.605  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-25 13:23:53.605  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-25 13:24:07.817  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.u.VersionPrinter                 : Flyway Community Edition 5.0.7 by Boxfuse
+2019-04-25 13:24:07.873  INFO LAPTOP-VRJTK5GU --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-04-25 13:24:10.850 ERROR LAPTOP-VRJTK5GU --- [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:51)
+	at org.flywaydb.core.internal.database.DatabaseFactory.createDatabase(DatabaseFactory.java:67)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1634)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1168)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at org.za.assets.Application.main(Application.java:40)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 37 more
+2019-04-25 13:24:11.161  WARN LAPTOP-VRJTK5GU --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain database connection
+------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+2019-04-25 13:24:11.319  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2019-04-25 13:24:14.340  INFO LAPTOP-VRJTK5GU --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-04-25 13:24:14.350 ERROR LAPTOP-VRJTK5GU --- [           main] o.s.b.SpringApplication                  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain database connection
+------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at org.za.assets.Application.main(Application.java:40)
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain database connection
+------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:57)
+	at org.flywaydb.core.internal.database.DatabaseFactory.createDatabase(DatabaseFactory.java:67)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1634)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1168)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	... 18 more
+Caused by: org.postgresql.util.PSQLException: Connection to 192.168.99.100:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:51)
+	... 24 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 37 more
+2019-04-25 14:34:13.570  INFO LAPTOP-VRJTK5GU --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ee2b6f9: startup date [Thu Apr 25 14:34:13 CAT 2019]; root of context hierarchy
+2019-04-25 14:34:35.825  INFO LAPTOP-VRJTK5GU --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$348ed68a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-25 14:34:40.302  INFO LAPTOP-VRJTK5GU --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-25 14:34:40.427  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-25 14:34:40.479  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-25 14:34:40.482  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-25 14:34:40.564  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oracle\product\12.2.0\dbhome_1\bin;C:\Program Files (x86)\Intel\TXE Components\TCS\;C:\Program Files\Intel\TXE Components\TCS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\TXE Components\DAL\;C:\Program Files (x86)\Intel\TXE Components\DAL\;C:\Program Files\Intel\TXE Components\IPT\;C:\Program Files (x86)\Intel\TXE Components\IPT\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\gradle-4.2.1\bin;C:\apache-maven-3.3.9\bin;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Users\ukama\Anaconda3;C:\Users\ukama\Anaconda3\Library\mingw-w64\bin;C:\Users\ukama\Anaconda3\Library\usr\bin;C:\Users\ukama\Anaconda3\Library\bin;C:\Users\ukama\Anaconda3\Scripts;C:\Users\ukama\AppData\Local\Microsoft\WindowsApps;C:\Users\ukama\AppData\Roaming\npm;C:\Program Files\Docker Toolbox;.]
+2019-04-25 14:34:47.264  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-25 14:34:47.265  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 33764 ms
+2019-04-25 14:34:47.686  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-25 14:34:47.725  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-25 14:34:47.727  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-25 14:34:47.728  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-25 14:34:47.728  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-25 14:34:48.694  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.u.VersionPrinter                 : Flyway Community Edition 5.0.7 by Boxfuse
+2019-04-25 14:34:48.724  INFO LAPTOP-VRJTK5GU --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-04-25 14:34:49.610  INFO LAPTOP-VRJTK5GU --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-04-25 14:34:49.635  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.d.DatabaseFactory                : Database: jdbc:postgresql://192.168.99.100:5432/car_list_db (PostgreSQL 11.2)
+2019-04-25 14:34:49.687  WARN LAPTOP-VRJTK5GU --- [           main] o.f.c.i.d.Database                       : Flyway upgrade recommended: PostgreSQL 11.2 is newer than this version of Flyway and support has not been tested.
+2019-04-25 14:34:50.697  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbValidate                     : Successfully validated 17 migrations (execution time 00:00.575s)
+2019-04-25 14:34:50.770  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table: "public"."flyway_schema_history"
+2019-04-25 14:34:52.108  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Current version of schema "public": << Empty Schema >>
+2019-04-25 14:34:52.114  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Migrating schema "public" to version 1.0.0 - init db
+2019-04-25 14:34:52.582  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Migrating schema "public" to version 1.0.1 - create license type table
+2019-04-25 14:34:53.296  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Migrating schema "public" to version 1.0.2 - create license table
+2019-04-25 14:34:54.236  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Migrating schema "public" to version 1.0.3 - create user table
+2019-04-25 14:34:55.386  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Migrating schema "public" to version 1.0.4 - create vehicle table
+2019-04-25 14:34:56.643  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Migrating schema "public" to version 1.0.5 - create types table
+2019-04-25 14:34:57.207  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Migrating schema "public" to version 1.0.6 - create schedule table
+2019-04-25 14:34:57.703  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Migrating schema "public" to version 1.0.7 - create profile table
+2019-04-25 14:34:58.134  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Migrating schema "public" to version 1.0.8 - create route table
+2019-04-25 14:34:58.606  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Migrating schema "public" to version 1.0.9 - add license type data
+2019-04-25 14:34:58.768  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Migrating schema "public" to version 1.0.10 - add license data
+2019-04-25 14:34:58.976  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Migrating schema "public" to version 1.0.11 - add vehicle data
+2019-04-25 14:34:59.185  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Migrating schema "public" to version 1.0.12 - add user data
+2019-04-25 14:34:59.348  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Migrating schema "public" to version 1.0.13 - add types data
+2019-04-25 14:34:59.499  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Migrating schema "public" to version 1.0.14 - add schedule data
+2019-04-25 14:34:59.669  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Migrating schema "public" to version 1.0.15 - add profile data
+2019-04-25 14:34:59.831  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Migrating schema "public" to version 1.0.16 - add route data
+2019-04-25 14:34:59.942  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Successfully applied 17 migrations to schema "public" (execution time 00:09.177s)
+2019-04-25 14:35:02.370  INFO LAPTOP-VRJTK5GU --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-04-25 14:35:02.641  INFO LAPTOP-VRJTK5GU --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-25 14:35:06.344  INFO LAPTOP-VRJTK5GU --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.2.17.Final}
+2019-04-25 14:35:06.501  INFO LAPTOP-VRJTK5GU --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2019-04-25 14:35:10.539  INFO LAPTOP-VRJTK5GU --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-04-25 14:35:16.091  INFO LAPTOP-VRJTK5GU --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-04-25 14:35:17.640  INFO LAPTOP-VRJTK5GU --- [           main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-25 14:35:17.718  INFO LAPTOP-VRJTK5GU --- [           main] o.h.t.BasicTypeRegistry                  : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@71b26880
+2019-04-25 14:35:25.060  WARN LAPTOP-VRJTK5GU --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [acquired_date] in table [assets_schema.license]; found [date (Types#DATE)], but expecting [timestamp (Types#TIMESTAMP)]
+2019-04-25 14:35:25.061  INFO LAPTOP-VRJTK5GU --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-04-25 14:35:25.080  INFO LAPTOP-VRJTK5GU --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-04-25 14:35:25.092  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2019-04-25 14:35:25.234  INFO LAPTOP-VRJTK5GU --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-04-25 14:35:25.245 ERROR LAPTOP-VRJTK5GU --- [           main] o.s.b.SpringApplication                  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [acquired_date] in table [assets_schema.license]; found [date (Types#DATE)], but expecting [timestamp (Types#TIMESTAMP)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at org.za.assets.Application.main(Application.java:40)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [acquired_date] in table [assets_schema.license]; found [date (Types#DATE)], but expecting [timestamp (Types#TIMESTAMP)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	... 16 more
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [acquired_date] in table [assets_schema.license]; found [date (Types#DATE)], but expecting [timestamp (Types#TIMESTAMP)]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateColumnType(AbstractSchemaValidator.java:159)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:143)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:89)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:68)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:191)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:312)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:892)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	... 20 more
+2019-04-25 14:41:45.497  INFO LAPTOP-VRJTK5GU --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c9bfddc: startup date [Thu Apr 25 14:41:44 CAT 2019]; root of context hierarchy
+2019-04-25 14:42:15.406  INFO LAPTOP-VRJTK5GU --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$77b6cfe5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-25 14:42:23.336  INFO LAPTOP-VRJTK5GU --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-04-25 14:42:23.461  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-25 14:42:23.569  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-04-25 14:42:23.574  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-04-25 14:42:23.648  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oracle\product\12.2.0\dbhome_1\bin;C:\Program Files (x86)\Intel\TXE Components\TCS\;C:\Program Files\Intel\TXE Components\TCS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\TXE Components\DAL\;C:\Program Files (x86)\Intel\TXE Components\DAL\;C:\Program Files\Intel\TXE Components\IPT\;C:\Program Files (x86)\Intel\TXE Components\IPT\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\gradle-4.2.1\bin;C:\apache-maven-3.3.9\bin;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Users\ukama\Anaconda3;C:\Users\ukama\Anaconda3\Library\mingw-w64\bin;C:\Users\ukama\Anaconda3\Library\usr\bin;C:\Users\ukama\Anaconda3\Library\bin;C:\Users\ukama\Anaconda3\Scripts;C:\Users\ukama\AppData\Local\Microsoft\WindowsApps;C:\Users\ukama\AppData\Roaming\npm;C:\Program Files\Docker Toolbox;.]
+2019-04-25 14:42:30.654  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-04-25 14:42:30.655  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 46106 ms
+2019-04-25 14:42:31.043  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-04-25 14:42:31.059  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-25 14:42:31.061  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-25 14:42:31.061  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-25 14:42:31.062  INFO LAPTOP-VRJTK5GU --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-25 14:42:31.997  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.u.VersionPrinter                 : Flyway Community Edition 5.0.7 by Boxfuse
+2019-04-25 14:42:32.057  INFO LAPTOP-VRJTK5GU --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-04-25 14:42:32.904  INFO LAPTOP-VRJTK5GU --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-04-25 14:42:32.929  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.d.DatabaseFactory                : Database: jdbc:postgresql://192.168.99.100:5432/car_list_db (PostgreSQL 11.2)
+2019-04-25 14:42:32.987  WARN LAPTOP-VRJTK5GU --- [           main] o.f.c.i.d.Database                       : Flyway upgrade recommended: PostgreSQL 11.2 is newer than this version of Flyway and support has not been tested.
+2019-04-25 14:42:33.996  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbValidate                     : Successfully validated 17 migrations (execution time 00:00.542s)
+2019-04-25 14:42:34.061  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 1.0.16
+2019-04-25 14:42:34.064  INFO LAPTOP-VRJTK5GU --- [           main] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2019-04-25 14:42:35.144  INFO LAPTOP-VRJTK5GU --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-04-25 14:42:35.290  INFO LAPTOP-VRJTK5GU --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-25 14:42:35.925  INFO LAPTOP-VRJTK5GU --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.2.17.Final}
+2019-04-25 14:42:35.932  INFO LAPTOP-VRJTK5GU --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2019-04-25 14:42:36.336  INFO LAPTOP-VRJTK5GU --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-04-25 14:42:37.645  INFO LAPTOP-VRJTK5GU --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-04-25 14:42:38.360  INFO LAPTOP-VRJTK5GU --- [           main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-25 14:42:38.388  INFO LAPTOP-VRJTK5GU --- [           main] o.h.t.BasicTypeRegistry                  : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1a0f349
+2019-04-25 14:42:42.212  INFO LAPTOP-VRJTK5GU --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-04-25 14:42:45.701  INFO LAPTOP-VRJTK5GU --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-25 14:42:47.049  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c9bfddc: startup date [Thu Apr 25 14:41:44 CAT 2019]; root of context hierarchy
+2019-04-25 14:42:47.375  WARN LAPTOP-VRJTK5GU --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-25 14:42:47.611  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/license/remove],methods=[DELETE]}" onto public void org.za.assets.rest.LicenseController.remove(java.util.UUID) throws java.lang.Exception
+2019-04-25 14:42:47.617  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/license/get]}" onto public org.za.assets.dto.LicenseDto org.za.assets.rest.LicenseController.get(java.util.UUID) throws java.lang.Exception
+2019-04-25 14:42:47.618  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/license/create],methods=[PUT]}" onto public org.za.assets.dto.LicenseDto org.za.assets.rest.LicenseController.create(org.za.assets.dto.LicenseDto) throws java.lang.Exception
+2019-04-25 14:42:47.621  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/license/list]}" onto public java.util.List<org.za.assets.dto.LicenseDto> org.za.assets.rest.LicenseController.list()
+2019-04-25 14:42:47.638  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/license_type/remove],methods=[DELETE]}" onto public void org.za.assets.rest.LicenseTypeController.remove(java.util.UUID) throws java.lang.Exception
+2019-04-25 14:42:47.639  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/license_type/get]}" onto public org.za.assets.dto.LicenseTypeDto org.za.assets.rest.LicenseTypeController.get(java.util.UUID) throws java.lang.Exception
+2019-04-25 14:42:47.641  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/license_type/create],methods=[PUT]}" onto public org.za.assets.dto.LicenseTypeDto org.za.assets.rest.LicenseTypeController.create(org.za.assets.dto.LicenseTypeDto) throws java.lang.Exception
+2019-04-25 14:42:47.643  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/license_type/list]}" onto public java.util.List<org.za.assets.dto.LicenseTypeDto> org.za.assets.rest.LicenseTypeController.list()
+2019-04-25 14:42:47.649  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/profile/remove],methods=[DELETE]}" onto public void org.za.assets.rest.ProfileController.remove(java.util.UUID) throws java.lang.Exception
+2019-04-25 14:42:47.650  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/profile/get]}" onto public org.za.assets.dto.ProfileDto org.za.assets.rest.ProfileController.get(java.util.UUID) throws java.lang.Exception
+2019-04-25 14:42:47.651  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/profile/create],methods=[PUT]}" onto public org.za.assets.dto.ProfileDto org.za.assets.rest.ProfileController.create(org.za.assets.dto.ProfileDto) throws java.lang.Exception
+2019-04-25 14:42:47.655  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/profile/list]}" onto public java.util.List<org.za.assets.dto.ProfileDto> org.za.assets.rest.ProfileController.list()
+2019-04-25 14:42:47.662  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/route/remove],methods=[DELETE]}" onto public void org.za.assets.rest.RouteController.remove(java.util.UUID) throws java.lang.Exception
+2019-04-25 14:42:47.663  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/route/get]}" onto public org.za.assets.dto.RouteDto org.za.assets.rest.RouteController.get(java.util.UUID) throws java.lang.Exception
+2019-04-25 14:42:47.664  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/route/create],methods=[PUT]}" onto public org.za.assets.dto.RouteDto org.za.assets.rest.RouteController.create(org.za.assets.dto.RouteDto) throws java.lang.Exception
+2019-04-25 14:42:47.665  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/route/list]}" onto public java.util.List<org.za.assets.dto.RouteDto> org.za.assets.rest.RouteController.list()
+2019-04-25 14:42:47.679  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/schedule/remove],methods=[DELETE]}" onto public void org.za.assets.rest.ScheduleController.remove(java.util.UUID) throws java.lang.Exception
+2019-04-25 14:42:47.680  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/schedule/get]}" onto public org.za.assets.dto.ScheduleDto org.za.assets.rest.ScheduleController.get(java.util.UUID) throws java.lang.Exception
+2019-04-25 14:42:47.689  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/schedule/create],methods=[PUT]}" onto public org.za.assets.dto.ScheduleDto org.za.assets.rest.ScheduleController.create(org.za.assets.dto.ScheduleDto) throws java.lang.Exception
+2019-04-25 14:42:47.696  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/schedule/list]}" onto public java.util.List<org.za.assets.dto.ScheduleDto> org.za.assets.rest.ScheduleController.list()
+2019-04-25 14:42:47.697  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/schedule/add/route],methods=[PUT]}" onto public void org.za.assets.rest.ScheduleController.addRoute(org.za.assets.dto.ScheduleDto) throws java.lang.Exception
+2019-04-25 14:42:47.701  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/remove],methods=[DELETE]}" onto public void org.za.assets.rest.TypesController.remove(java.util.UUID) throws java.lang.Exception
+2019-04-25 14:42:47.702  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/get]}" onto public org.za.assets.dto.TypesDto org.za.assets.rest.TypesController.get(java.util.UUID) throws java.lang.Exception
+2019-04-25 14:42:47.703  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/create],methods=[PUT]}" onto public org.za.assets.dto.TypesDto org.za.assets.rest.TypesController.create(org.za.assets.dto.TypesDto) throws java.lang.Exception
+2019-04-25 14:42:47.704  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/list]}" onto public java.util.List<org.za.assets.dto.TypesDto> org.za.assets.rest.TypesController.list()
+2019-04-25 14:42:47.709  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/remove],methods=[DELETE]}" onto public void org.za.assets.rest.UserController.remove(java.util.UUID) throws java.lang.Exception
+2019-04-25 14:42:47.710  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/get/{id}]}" onto public org.za.assets.dto.UserDto org.za.assets.rest.UserController.get(java.util.UUID) throws java.lang.Exception
+2019-04-25 14:42:47.711  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/create],methods=[PUT]}" onto public org.za.assets.dto.UserDto org.za.assets.rest.UserController.create(org.za.assets.dto.UserDto) throws java.lang.Exception
+2019-04-25 14:42:47.711  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/list]}" onto public java.util.List<org.za.assets.dto.UserDto> org.za.assets.rest.UserController.list()
+2019-04-25 14:42:47.716  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vehicle/remove],methods=[DELETE]}" onto public void org.za.assets.rest.VehicleController.remove(java.util.UUID) throws java.lang.Exception
+2019-04-25 14:42:47.717  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vehicle/get]}" onto public void org.za.assets.rest.VehicleController.get(java.util.UUID) throws java.lang.Exception
+2019-04-25 14:42:47.721  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vehicle/create],methods=[PUT]}" onto public void org.za.assets.rest.VehicleController.create(org.za.assets.dto.VehicleDto) throws java.lang.Exception
+2019-04-25 14:42:47.728  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vehicle/list]}" onto public java.util.List<org.za.assets.dto.VehicleDto> org.za.assets.rest.VehicleController.list()
+2019-04-25 14:42:47.729  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vehicle/create/schedule],methods=[PUT]}" onto public void org.za.assets.rest.VehicleController.scheduleVehicle(org.za.assets.dto.VehicleDto) throws java.lang.Exception
+2019-04-25 14:42:47.743  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-25 14:42:47.746  INFO LAPTOP-VRJTK5GU --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-25 14:42:48.142  INFO LAPTOP-VRJTK5GU --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-25 14:42:48.142  INFO LAPTOP-VRJTK5GU --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-25 14:42:48.634  INFO LAPTOP-VRJTK5GU --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2019-04-25 14:42:49.919  INFO LAPTOP-VRJTK5GU --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-25 14:42:49.925  INFO LAPTOP-VRJTK5GU --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-04-25 14:42:49.947  INFO LAPTOP-VRJTK5GU --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-04-25 14:42:50.005  INFO LAPTOP-VRJTK5GU --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-04-25 14:42:50.135  INFO LAPTOP-VRJTK5GU --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2019-04-25 14:42:50.283  INFO LAPTOP-VRJTK5GU --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''

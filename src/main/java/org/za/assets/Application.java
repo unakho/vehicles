@@ -9,6 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -25,8 +27,9 @@ import java.util.stream.Stream;
  */
 @PropertySource("classpath:application.properties")
 @SpringBootApplication
-@EnableTransactionManagement
+//@EnableTransactionManagement
 @ComponentScan(basePackages = "org.za.assets")
+@RestController
 public class Application implements ApplicationRunner{
 
     //private static final Logger logger = LogManager.getLogger(Application.class);
@@ -34,6 +37,11 @@ public class Application implements ApplicationRunner{
     private AtomicInteger count = new AtomicInteger(0);
     private void incrementAndReport(){
         System.out.println(count.incrementAndGet() + " ");
+    }
+
+    @RequestMapping("/")
+    public String halloDocker() {
+        return "Hello Docker I am a Prof!";
     }
 
     public static void main(String[] args) throws InterruptedException, ExecutionException{

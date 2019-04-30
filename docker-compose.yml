@@ -1,0 +1,35 @@
+version: '3.1'
+services:
+    app:
+        build: .
+        image: 'assets-docker:latest'
+        networks:
+            - 'webnet'
+        ports:
+            - '8080:8080'
+        environment:
+            - ENVIRONMENT=local
+            - AUTH_ENABLED=false
+        depends_on:
+            - 'db'
+        links:
+            - 'db'
+    db:
+        container_name: 'db'
+        image: 'postgres:latest'
+        restart: 'always'
+        environment:
+            - 'POSTGRES_USER=postgres'
+            - 'POSTGRES_PASSWORD=postgres123'
+            - 'POSTGRES_DB=car_list_db'
+            - 'PG_HOST=localhost'
+            - 'PG_PORT=5432'
+            - 'PG_DATA:/var/lib/postgresql/data'
+        ports:
+            - '5432:5432'
+        volumes:
+            - '/var/lib/postgresql/data'
+volumes:
+    postgres:
+networks:
+    webnet:
